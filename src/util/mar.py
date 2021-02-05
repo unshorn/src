@@ -187,7 +187,7 @@ class MAR(object):
                 if count >= 1:
                     # sample.append(np.random.choice(can,1)[0])
                     sample.append(can[0])
-                    count = 0
+                    count -= 1
                     can = []
             return sample
 
@@ -222,7 +222,7 @@ class MAR(object):
 
         pos_num_last = Counter(y0)[1]
 
-        lifes = 1
+        lifes = 3
         life = lifes
 
 
